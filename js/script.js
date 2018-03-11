@@ -7,6 +7,17 @@ var on = 0;
 var cardCounter = 0;
 var cardLength = 2;
 
+$('.wrapper').children().hide();
+$('.play').show();
+$('.desc').show();
+
+$('.play').click(function () {
+	$('.wrapper').children().show();
+	$('.play').hide();
+	$('.res').hide();
+	$('.desc').hide();
+});
+
 
 $('.card').click(function () {
 	if (j == 0) {
@@ -75,6 +86,7 @@ $('.player').hide();
 $('.burg').click(function () {
 	$('.bar').toggleClass('change');
 	$('.player').toggle('slide');
+	$('.help').hide();
 });
 
 $('.res').hide();
@@ -95,6 +107,19 @@ $('.res').click(function () {
 $('.bg').hide();
 
 $('.bgBurg').click(function () {
-	$('.bgBar').toggleClass('change');
-	$('.bg').slideToggle();
+	var i = 1;
+	i++;
+	$('.fa-angle-down').toggleClass('change');
+	$('.bg').slideToggle('slow');
+	$('.helpBg').hide();
 });
+
+$('.bg6').css('border-color', 'blue');
+
+$('.bg').click(function () {
+	$('.bg').css('border-color', '#c3c3c3');
+	var bgInd = $(this).index() + 1;
+	$(this).css('border-color', 'blue').next().css('border-top','1px solid blue');
+	$('.wrapper').css('background', 'url(./img/bg' + bgInd + '.jpg) no-repeat').css('background-size', 'cover');
+});
+

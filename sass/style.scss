@@ -182,6 +182,7 @@
 }
 
 .bgGroup {
+	display: block;
 	position: relative;
 	bottom: 7%;
 	left: 1%;
@@ -220,30 +221,75 @@
 	@include bg;
 	border-bottom: 1px solid #c3c3c3;
 }
+.bg {
+	cursor: pointer;
+}
 
 .bgBurg {
 	cursor: pointer;
 	display: block;
-	position: absolute;
-	bottom: 2%;
-	left:3.5%;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 10px;
 
-
-	.bar1, .bar2 {
+	.fa-angle-down {
+		color: #fff;
+		font-size: 50px;
+		margin-left: 25px;
+		background: lighten(#000, 20%);
 		width: 50px;
-		height: 4px;
-		margin: 8px 0;
-		background: #fff;
-		transition: 0.4s;
+		border-radius: 50%;
+		border:1px solid #c3c3c3;
 	}
 
-	.bar1.change  {
-    	-webkit-transform: rotate(-45deg) translate(-5px, 5px);
-    	transform: rotate(-45deg) translate(-5px, 5px);
+	.change {
+		transform: rotate(-180deg);
 	}
+}
 
-	.bar2.change {
-		-webkit-transform: rotate(45deg) translate(-5px, -6px);
-    	transform: rotate(45deg) translate(-6px, -6px);
-	}
+.bgMenu {
+	position: absolute;
+	top: 1%;
+	left: 2%;
+	width: 100px;
+}
+
+.helpBg {
+	font-size: 25px;
+	color: #fff;
+	cursor: default;
+	opacity: 0.3;
+	display: block;
+	width: 300px;
+	position: absolute;
+	top: 25px;
+	left: 120px;
+}
+
+.play {
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	border:1px solid #fff;
+	padding: 5px;
+	width: 70px;
+	border-radius: 20%;
+	background: blue;
+	margin: 0 auto;
+	position: absolute;
+	top: 180px;
+	left: 45%;
+}
+
+.desc {
+	font-size: 20px;
+	color: #c3c3c3;
+	display: block;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	top: 250px;
+	left: 24%;
+
 }
