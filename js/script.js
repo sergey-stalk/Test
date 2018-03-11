@@ -65,7 +65,7 @@ var find = function () {
 }
 
 $('.player').click(function () {
-	playerIndex = $(this).index() + 2;
+	playerIndex = $(this).index() + 1;
 	addCard();
 });
 
