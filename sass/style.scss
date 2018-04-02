@@ -11,12 +11,34 @@
 
 .wrapper {
 	position: relative;
-	width: 1000px;
+	width: 100%;
+	max-width: 1000px;
 	height: 600px;
 	margin: 0 auto;
 	background:url(../img/bg6.jpg) no-repeat;
 	background-size: cover;
 	perspective: 1000;
+
+	@media screen and (max-width: 1000px){
+		max-width: 768px;
+		height: 500px;
+	}
+	@media screen and (max-width: 760px){
+		max-width: 500px;
+		height: 300px;
+	}
+	@media screen and (max-width: 500px){
+		max-width: 425px;
+		height: 250px;
+	}
+	@media screen and (max-width: 425px){
+		max-width: 375px;
+		height: 200px;
+	}
+	@media screen and (max-width: 375px){
+		max-width: 320px;
+		height: 200px;
+	}
 
 	.res {
 		position: absolute;
@@ -26,6 +48,10 @@
 		right: 1%;
 		bottom: 1%;
 		cursor: pointer;
+
+		@media screen and (max-width: 500px){
+			font-size: 25px;
+		}
 	}
 
 	.hide {
@@ -67,6 +93,19 @@
 		display: flex;
 		position: relative;
 		top: calc(50% - 150px);
+
+		@media screen and (max-width: 1000px)	{
+			top: calc(50% - 100px);
+		}
+		@media screen and (max-width: 760px)	{
+			top: calc(50% - 70px);
+		}
+		@media screen and (max-width: 500px)	{
+			top: calc(50% - 50px);
+		}
+		@media screen and (max-width: 425px)	{
+			top: calc(50% - 40px);
+		}
 	}
 
 	.playerLength {
@@ -83,6 +122,14 @@
 			margin-left: 20px;
 			cursor: default;
 			opacity: 0.3;
+
+			@media screen and (max-width: 1000px){
+				font-size: 20px;
+			}
+
+			@media screen and (max-width: 500px){
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -92,6 +139,14 @@
 		margin: 5px;
 		justify-content: space-between;
 		cursor: pointer;
+
+		@media screen and (max-width: 1000px){
+			font-size: 20px;
+		}
+
+		@media screen and (max-width: 500px){
+			font-size: 16px;
+		}
 		
 	}
 
@@ -109,6 +164,24 @@
 	cursor: pointer;
 	border: 1px solid black;
 	border-radius: 5%;
+	@media screen and (max-width: 1000px){
+		width: 130px;
+		height: 190px;
+	}
+
+	@media screen and (max-width: 760px){
+		width: 83px;
+		height: 120px;
+	}
+
+	@media screen and (max-width: 500px){
+		width: 68px;
+		height: 100px;
+	}
+	@media screen and (max-width: 425px){
+		width: 54px;
+		height: 80px;
+	}
 }
 
 .shirt {
@@ -194,6 +267,14 @@
 	border: 1px solid #c3c3c3;
 	background-size: cover;
 	border-bottom: none;
+
+	@media screen and (max-width: 1000px){
+		width: 70px;
+		height: 30px;
+	}
+	@media screen and (max-width: 1000px){
+		display: none;
+	}
 }
 
 .bg1 {
@@ -240,6 +321,15 @@
 		width: 50px;
 		border-radius: 50%;
 		border:1px solid #c3c3c3;
+
+		@media screen and (max-width: 1000px){
+			font-size: 30px;
+			width: 30px;
+		}
+
+		@media screen and (max-width: 760px){
+			display: none;
+		}
 	}
 
 	.change {
@@ -264,6 +354,16 @@
 	position: absolute;
 	top: 25px;
 	left: 120px;
+
+	@media screen and (max-width: 1000px){
+		font-size: 20px;
+		left: 100px;
+		top: 20px;
+	}
+
+	@media screen and (max-width: 760px){
+		display: none;
+	}
 }
 
 .play {
@@ -280,6 +380,17 @@
 	position: absolute;
 	top: 180px;
 	left: 45%;
+
+	@media screen and (max-width: 760px){
+		font-size: 16px;
+		width: 40px;
+		top: 70px;
+	}
+	@media screen and (max-width: 425px){
+		font-size: 20px;
+		width: 50px;
+		top: 80px;
+	}
 }
 
 .desc {
@@ -287,9 +398,31 @@
 	color: #c3c3c3;
 	display: block;
 	position: relative;
-	width: 500px;
+	max-width: 500px;
 	text-align: center;
-	top: 250px;
+	top: 50%;
 	left: 24%;
+	
+	@media screen and (max-width: 1000px){
+		left: 17%;
+	}
+	@media screen and (max-width: 760px){
+		font-size: 14px;
+		max-width: 300px;
+		left: 20%;
+		top: 50%;
+	}
+	@media screen and (max-width: 760px){
+		font-size: 14px;
+		max-width: 300px;
+		left: 18%;
+		top: 50%;
+	}
 
+	@media screen and (max-width: 500px){
+		font-size: 14px;
+		max-width: 300px;
+		left: 15%;
+		top: 45%;
+	}
 }

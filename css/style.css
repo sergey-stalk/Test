@@ -3,12 +3,33 @@
 
 .wrapper {
   position: relative;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 600px;
   margin: 0 auto;
   background: url(../img/bg6.jpg) no-repeat;
   background-size: cover;
   perspective: 1000; }
+  @media screen and (max-width: 1000px) {
+    .wrapper {
+      max-width: 768px;
+      height: 500px; } }
+  @media screen and (max-width: 760px) {
+    .wrapper {
+      max-width: 500px;
+      height: 300px; } }
+  @media screen and (max-width: 500px) {
+    .wrapper {
+      max-width: 425px;
+      height: 250px; } }
+  @media screen and (max-width: 425px) {
+    .wrapper {
+      max-width: 375px;
+      height: 200px; } }
+  @media screen and (max-width: 375px) {
+    .wrapper {
+      max-width: 320px;
+      height: 200px; } }
   .wrapper .res {
     position: absolute;
     font-size: 42px;
@@ -17,6 +38,9 @@
     right: 1%;
     bottom: 1%;
     cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .wrapper .res {
+        font-size: 25px; } }
   .wrapper .hide {
     display: none; }
   .wrapper .burg {
@@ -44,6 +68,18 @@
     display: flex;
     position: relative;
     top: calc(50% - 150px); }
+    @media screen and (max-width: 1000px) {
+      .wrapper .cards {
+        top: calc(50% - 100px); } }
+    @media screen and (max-width: 760px) {
+      .wrapper .cards {
+        top: calc(50% - 70px); } }
+    @media screen and (max-width: 500px) {
+      .wrapper .cards {
+        top: calc(50% - 50px); } }
+    @media screen and (max-width: 425px) {
+      .wrapper .cards {
+        top: calc(50% - 40px); } }
   .wrapper .playerLength {
     position: absolute;
     right: 2%;
@@ -57,12 +93,24 @@
       margin-left: 20px;
       cursor: default;
       opacity: 0.3; }
+      @media screen and (max-width: 1000px) {
+        .wrapper .playerLength .help {
+          font-size: 20px; } }
+      @media screen and (max-width: 500px) {
+        .wrapper .playerLength .help {
+          font-size: 16px; } }
   .wrapper .player {
     font-size: 25px;
     color: #fff;
     margin: 5px;
     justify-content: space-between;
     cursor: pointer; }
+    @media screen and (max-width: 1000px) {
+      .wrapper .player {
+        font-size: 20px; } }
+    @media screen and (max-width: 500px) {
+      .wrapper .player {
+        font-size: 16px; } }
   .wrapper .player:hover {
     color: #5E68C9; }
 
@@ -75,6 +123,22 @@
   cursor: pointer;
   border: 1px solid black;
   border-radius: 5%; }
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 130px;
+      height: 190px; } }
+  @media screen and (max-width: 760px) {
+    .card {
+      width: 83px;
+      height: 120px; } }
+  @media screen and (max-width: 500px) {
+    .card {
+      width: 68px;
+      height: 100px; } }
+  @media screen and (max-width: 425px) {
+    .card {
+      width: 54px;
+      height: 80px; } }
 
 .shirt {
   background: url(../img/shirt.jpg) no-repeat;
@@ -184,6 +248,13 @@
   border: 1px solid #c3c3c3;
   background-size: cover;
   border-bottom: none; }
+  @media screen and (max-width: 1000px) {
+    .bg1 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg1 {
+      display: none; } }
 
 .bg2 {
   background: url(../img/bg2.jpg) no-repeat;
@@ -192,6 +263,13 @@
   border: 1px solid #c3c3c3;
   background-size: cover;
   border-bottom: none; }
+  @media screen and (max-width: 1000px) {
+    .bg2 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg2 {
+      display: none; } }
 
 .bg3 {
   background: url(../img/bg3.jpg) no-repeat;
@@ -200,6 +278,13 @@
   border: 1px solid #c3c3c3;
   background-size: cover;
   border-bottom: none; }
+  @media screen and (max-width: 1000px) {
+    .bg3 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg3 {
+      display: none; } }
 
 .bg4 {
   background: url(../img/bg4.jpg) no-repeat;
@@ -208,6 +293,13 @@
   border: 1px solid #c3c3c3;
   background-size: cover;
   border-bottom: none; }
+  @media screen and (max-width: 1000px) {
+    .bg4 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg4 {
+      display: none; } }
 
 .bg5 {
   background: url(../img/bg5.jpg) no-repeat;
@@ -216,6 +308,13 @@
   border: 1px solid #c3c3c3;
   background-size: cover;
   border-bottom: none; }
+  @media screen and (max-width: 1000px) {
+    .bg5 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg5 {
+      display: none; } }
 
 .bg6 {
   background: url(../img/bg6.jpg) no-repeat;
@@ -225,6 +324,13 @@
   background-size: cover;
   border-bottom: none;
   border-bottom: 1px solid #c3c3c3; }
+  @media screen and (max-width: 1000px) {
+    .bg6 {
+      width: 70px;
+      height: 30px; } }
+  @media screen and (max-width: 1000px) {
+    .bg6 {
+      display: none; } }
 
 .bg {
   cursor: pointer; }
@@ -243,6 +349,13 @@
     width: 50px;
     border-radius: 50%;
     border: 1px solid #c3c3c3; }
+    @media screen and (max-width: 1000px) {
+      .bgBurg .fa-angle-down {
+        font-size: 30px;
+        width: 30px; } }
+    @media screen and (max-width: 760px) {
+      .bgBurg .fa-angle-down {
+        display: none; } }
   .bgBurg .change {
     transform: rotate(-180deg); }
 
@@ -262,6 +375,14 @@
   position: absolute;
   top: 25px;
   left: 120px; }
+  @media screen and (max-width: 1000px) {
+    .helpBg {
+      font-size: 20px;
+      left: 100px;
+      top: 20px; } }
+  @media screen and (max-width: 760px) {
+    .helpBg {
+      display: none; } }
 
 .play {
   font-size: 25px;
@@ -277,13 +398,44 @@
   position: absolute;
   top: 180px;
   left: 45%; }
+  @media screen and (max-width: 760px) {
+    .play {
+      font-size: 16px;
+      width: 40px;
+      top: 70px; } }
+  @media screen and (max-width: 425px) {
+    .play {
+      font-size: 20px;
+      width: 50px;
+      top: 80px; } }
 
 .desc {
   font-size: 20px;
   color: #c3c3c3;
   display: block;
   position: relative;
-  width: 500px;
+  max-width: 500px;
   text-align: center;
-  top: 250px;
+  top: 50%;
   left: 24%; }
+  @media screen and (max-width: 1000px) {
+    .desc {
+      left: 17%; } }
+  @media screen and (max-width: 760px) {
+    .desc {
+      font-size: 14px;
+      max-width: 300px;
+      left: 20%;
+      top: 50%; } }
+  @media screen and (max-width: 760px) {
+    .desc {
+      font-size: 14px;
+      max-width: 300px;
+      left: 18%;
+      top: 50%; } }
+  @media screen and (max-width: 500px) {
+    .desc {
+      font-size: 14px;
+      max-width: 300px;
+      left: 15%;
+      top: 45%; } }

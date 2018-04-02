@@ -10,12 +10,18 @@ var cardLength = 2;
 $('.wrapper').children().hide();
 $('.play').show();
 $('.desc').show();
+if ($(window).width() < 425) {
+	$('.desc').hide();
+}
 
 $('.play').click(function () {
 	$('.wrapper').children().show();
 	$('.play').hide();
 	$('.res').hide();
 	$('.desc').hide();
+	if ($(window).width() < 760) {
+		$('.helpBg').hide();
+	}
 });
 
 
